@@ -31,3 +31,37 @@ console.log(li.classList.contains("list-items"));
 // Remove Elements;
 
 li.remove();
+
+
+// Traversy the DOM;
+
+// Parent node Traversal;
+
+// console.log(ul.parentNode.parentNode);
+// console.log(ul.parentElement.parentElement);
+
+// const html = document.documentElement;
+// console.log(html.parentNode);
+
+// Child Node Traversal;
+
+// let ul = document.querySelector("ul");
+
+// ul.childNodes[1].style.backgroundColor = "blue";
+
+// ul.childNodes[3].style.backgroundColor = "red";
+
+// console.log(ul.children);
+// console.log(ul.firstElementChild);
+// console.log(ul.lastElementChild);
+
+// console.log(ul.childNodes);
+// console.log(ul.firstChild);
+// console.log(ul.lastChild);
+
+// Sibling Node Traversal
+
+let ul = document.querySelector("ul");
+
+console.log(ul.previousSibling);
+console.log(ul.nextSibling);
