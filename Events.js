@@ -48,3 +48,26 @@ window.addEventListener("click", (e) => {
         e.target.style.backgroundColor = "rgb(50, 50, 88)";
     }, 6000)
 })
+
+// Another Variants;
+
+document.querySelector("#sports").addEventListener("click", (e) => {
+    console.log(e.target.getAttribute("id") + " is clicked");
+
+    const target = e.target;
+
+    if(target.matches("li")) {
+        target.style.backgroundColor = "green";
+    }
+
+
+    if(e.target.getAttribute("id") === "football") {
+        e.target.style.backgroundColor = "green";
+    } else if(e.target.getAttribute("id") === "basketball") {
+        e.target.style.backgroundColor = "orange";
+    } else if(e.target.getAttribute("id") === "tennis") {
+        e.target.style.backgroundColor = "yellow";
+    } else if(e.target.getAttribute("id") === "boxing") {
+        e.target.style.backgroundColor = "red";
+    }
+})
