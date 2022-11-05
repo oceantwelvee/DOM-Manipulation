@@ -71,3 +71,12 @@ document.querySelector("#sports").addEventListener("click", (e) => {
         e.target.style.backgroundColor = "red";
     }
 })
+
+// Add a new list element
+
+const sports = document.querySelector("#sports");
+const newSport = document.createElement("li");
+
+newSport.innerText = "Rugby";
+newSport.getAttribute("id", "rugby");
+sports.appendChild(newSport);
